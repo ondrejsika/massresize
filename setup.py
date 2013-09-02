@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "massresize",
-    version = "1.0.0",
+    version = "1.1.0",
     url = 'http://ondrejsika.com/docs/massresize/',
     download_url = 'https://github.com/sikaondrej/massresize/',
     license = 'GNU LGPL v.3',
