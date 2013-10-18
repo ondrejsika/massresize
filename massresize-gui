@@ -3,7 +3,17 @@
 import Tkinter, tkFileDialog, tkSimpleDialog
 from libmassresize import massresize
 
+info_text = """massresize
+==========
+Author: Ondrej Sika, http://ondrejsika.com, ondrej@ondrejsika.com
+Source: https://github.com/sikaondrej/massresize/
+Licence: MIT
+"""
+
 root = Tkinter.Tk()
+root.title("massresize")
+info = Tkinter.Label(root, text=info_text, justify="left", font="monospace")
+info.grid()
 dirname = tkFileDialog.askdirectory(parent=root, title='Please select a directory')
 width = tkSimpleDialog.askinteger(root, "Please select width of new images")
 massresize(dirname, width)
