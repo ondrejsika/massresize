@@ -6,10 +6,9 @@ from setuptools import setup, find_packages
 setup(
     name = "massresize",
     version = "1.1.0",
-    url = 'http://ondrejsika.com/docs/massresize/',
-    download_url = 'https://github.com/sikaondrej/massresize/',
+    url = 'https://github.com/sikaondrej/massresize/',
     license = 'GNU LGPL v.3',
-    description = "",
+    description = "Mass image resize",
     author = 'Ondrej Sika',
     author_email = 'ondrej@ondrejsika.com',
     py_modules = ["libmassresize"],
