@@ -7,7 +7,7 @@ setup(
     name = "massresize",
     version = "1.1.0",
     url = 'https://github.com/sikaondrej/massresize/',
-    license = 'GNU LGPL v.3',
+    license = 'MIT',
     description = "Mass image resize",
     author = 'Ondrej Sika',
     author_email = 'ondrej@ondrejsika.com',
