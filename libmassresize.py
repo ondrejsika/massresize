@@ -10,7 +10,10 @@ def massresize(path, new_width):
         return False
     for fname in os.listdir(path):
         if not os.path.exists(os.path.join(path, "resized")):
-             os.makedirs(os.path.join(path, "resized"))
+            try:
+                os.makedirs(os.path.join(path, "resized"))
+            except IOError:
+                return False
         new_fname = os.path.join(path, "resized", fname)
         fname = os.path.join(path, fname)
         try:
