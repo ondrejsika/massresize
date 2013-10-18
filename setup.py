@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "massresize",
-    version = "1.1.0",
+    version = "1.2.0",
     url = 'https://github.com/sikaondrej/massresize/',
     license = 'MIT',
     description = "Mass image resize",
