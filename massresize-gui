@@ -1,8 +1,9 @@
 #!/usr/bin/python
 
-import Tkinter, tkFileDialog
+import Tkinter, tkFileDialog, tkSimpleDialog
 from libmassresize import massresize
 
 root = Tkinter.Tk()
 dirname = tkFileDialog.askdirectory(parent=root, title='Please select a directory')
-massresize(dirname, 1024)
+width = tkSimpleDialog.askinteger(root, "Please select width of new images")
+massresize(dirname, width)
