@@ -1,5 +1,4 @@
 import os
-import sys
 
 try:
     import Image
@@ -7,6 +6,8 @@ except:
     from PIL import Image
 
 def massresize(path, new_width):
+    if not os.path.exists(path):
+        return False
     for fname in os.listdir(path):
         if not os.path.exists(os.path.join(path, "resized")):
              os.makedirs(os.path.join(path, "resized"))
@@ -24,3 +25,4 @@ def massresize(path, new_width):
 
         new_image = image.resize((new_width, new_height), Image.NEAREST)
         new_image.save(new_fname)
+    return True
